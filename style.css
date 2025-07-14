@@ -1,0 +1,76 @@
+/* Base setup */
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #00d9ff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00b0cc;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 25px;
+  }
+}

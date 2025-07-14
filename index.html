@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Certificate Verification - VaultofCodes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Certificate Verification</h1>
+
+    <form onsubmit="return validateCertificate()">
+      <label for="cert-id">Enter Certificate ID:</label>
+      <input type="text" id="cert-id" placeholder="Ex: VOC123456" required />
+
+      <button type="submit">Verify</button>
+    </form>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
